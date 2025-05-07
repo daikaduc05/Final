@@ -32,8 +32,8 @@
             label2 = new Label();
             btnLogin = new Button();
             btnSignup = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            userNameText = new TextBox();
+            passwordText = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -62,6 +62,7 @@
             btnLogin.TabIndex = 2;
             btnLogin.Text = "Đăng Nhập";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnSignup
             // 
@@ -72,27 +73,28 @@
             btnSignup.Text = "Đăng Ký";
             btnSignup.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // userNameText
             // 
-            textBox1.Location = new Point(236, 81);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(305, 31);
-            textBox1.TabIndex = 4;
+            userNameText.Location = new Point(236, 81);
+            userNameText.Name = "userNameText";
+            userNameText.Size = new Size(305, 31);
+            userNameText.TabIndex = 4;
             // 
-            // textBox2
+            // passwordText
             // 
-            textBox2.Location = new Point(236, 143);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(305, 31);
-            textBox2.TabIndex = 5;
+            passwordText.Location = new Point(236, 143);
+            passwordText.Name = "passwordText";
+            passwordText.PasswordChar = '*';
+            passwordText.Size = new Size(305, 31);
+            passwordText.TabIndex = 5;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(576, 282);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(passwordText);
+            Controls.Add(userNameText);
             Controls.Add(btnSignup);
             Controls.Add(btnLogin);
             Controls.Add(label2);
@@ -109,7 +111,7 @@
         private Label label2;
         private Button btnLogin;
         private Button btnSignup;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox userNameText;
+        private TextBox passwordText;
     }
 }

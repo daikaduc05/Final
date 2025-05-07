@@ -8,8 +8,9 @@ namespace Final.DLL.Enum
 {
     public enum RoleEnum
     {
-        Admin,
-        User,
+        Student,
         Teacher,
+        Admin,
+
     }
 }

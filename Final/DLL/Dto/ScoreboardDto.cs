@@ -5,15 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Final.DLL.Enum;
 
-namespace Final.DLL.Entity
+namespace Final.DLL.Dto
 {
-    public class Scoreboard
+    public class ScoreboardDto
     {
         public int Id { get; set; }
-        public int StudentId { get; set; }
-        public User? Student { get; set; }
-        public int ClassId { get; set; }
-        public Class? Class {  get; set; }
+        public string? StudentName { get; set; }
         public double? AssignmentScore { get; set; }
         public double? MidtermScore { get; set; }
         public double? FinalScore { get; set; }
